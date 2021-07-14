@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Your Favourite dishes</title>
+    <link rel="icon" href="download.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="naman_style.css">
+    <style>
+        #Site{
+            
+            padding: 0;
+            font-size: 30px;
+            font-weight: 900;
+            text-decoration: none;
+            color: tomato;
+            
+            text-align: center;
+            
+        }
+        
+        div a{
+            padding:45px;
+           
+            
+        }
+        li{
+            padding-right: 80px;
+            text-overflow: unset;
+        }
+        li a{
+            text-decoration: none;
+            font-size: 30px;
+            padding: 20px;
+        }
+        li a:hover{
+            text-decoration: underline;
+            color: white;
+            background-color: rgb(94, 88, 88);
+            border-radius: 3px;
+        }
+        .restro{
+            width: 100%;
+            padding: 20px;
+            margin: 18px;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            
+    
+        }
+      
+ 
+        img{
+            width:350px;
+            border: 5px  skyblue solid;
+            padding: 10px;
+            border-radius: 20%;
+            background-color: thistle;
+        }
+        img:hover{
+            background-color: violet;
+        }
+        h1,h2{
+            padding-left:100px;
+            font-size: 50px;
+            text-align: center;
+            padding-top: 20px;
+        }
+        #navbar{
+             display: flex;
+             align-items: center;
+             position: sticky;
+             top: 0px;
+        }
+        #navbar::before{
+                    content: "";
+                    background-color: rgb(105, 75, 75);
+                    position: absolute;
+                    top:0px;
+                    left:0px;
+                    height: 100%;
+                    width:100%;
+                    z-index: -1;
+                    opacity: 0.7;
+} 
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai', cursive;
+}
+#Site:hover{
+    color:black;
+    background-color: white;
+    text-decoration: underline;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+
+}
+body{
+    background-image: url("foo2.jpg");
+    background-size: cover;
+}
+.item{
+  width:80%;
+  text-align:center;
+ 
+  background-color: transparent;
+  border: 1px solid transparent;
+  
+  margin-bottom: 1px;
+  display: grid;
+  float: left;
+  
+}
+*{
+    text-shadow: 1px 1px 1px red;
+}
+    </style>
+</head>
+<body>
+    <h1>Order From Favourite Cuisines</h1>
+    <nav id="navbar">
+     <ul style="list-style: none; display: flex;">
+         <li><a href="#">Indian</a></li>
+         <li><a href="#">Italian</a></li>
+         <li><a href="#">Intercontinental</a></li>
+         <li><a href="#">Chinese</a></li>
+         <li><a href="#">Thai</a></li>
+         <li style="padding-right: 0px;"><a href="#">Japanese</a></li>
+     </ul>   
+    </nav>
+    <h1>List Of Restaurents</h1>
+    <div class="restro">
+        <div class="item">
+     <a target="_blank" href="https://swiggy.com"><img src="./img/1.jpg" alt=""></a>  
+     <p ><a id="Site"  target="_blank" href="https://swiggy.com">Indian</a></p>
+      </div>
+      <div class="item">
+      <a target="_blank" href="https://swiggy.com"><img src="./img/2.jpg" alt=""></a>  
+      <p ><a  id="Site"  target="_blank" href="https://swiggy.com" >Italian</a>     
+      </div>
+      <div class="item">
+      <a target="_blank" href="https://swiggy.com"><img src="./img/5.jpg" alt=""></a>   
+      <p ><a id="Site" target="_blank" href="https://swiggy.com">Intercontinental</a>  </p>     
+      </div>
+     
+      <div class="item">
+     <a target="_blank" href="https://swiggy.com"><img src="./img/9.jpg" alt=""></a>    
+     <p ><a id="Site"   target="_blank" href="https://swiggy.com">Thai</a></p>
+    </div>
+    <div class="item">
+
+        <a target="_blank" href="https://swiggy.com"><img src="./img/7.jpg" alt=""></a>   
+        <p ></a><a id="Site"  target="_blank" href="https://swiggy.com" >Chinese</a> </p>  
+    </div>
+    <div class="item">
+
+        <a target="_blank" href="https://swiggy.com"><img src="./img/8.jpg" alt=""></a>   
+        <p ><a id="Site" target="_blank" href="https://swiggy.com">Japanese</a>  </p>
+    </div>
+    
+    </div>
+</body>
+</html>
